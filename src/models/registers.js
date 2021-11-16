@@ -22,6 +22,6 @@ const employeeSchema = new mongoose.Schema({
 
 // now we neeed to careate a collections
 
-const Register = new mongoose.model("Register", employeeSchema);
+const Register = new mongoose.model("register", employeeSchema);
 
 module.exports = Register;

@@ -31,9 +31,6 @@ app.get("/",(req,res)  =>{
 app.get("/register", (req, res) => {
     res.render("register");
 })
-app.get("/login", (req, res) => {
-    res.render("login");
-})
 // create a new user in our database
 app.post("/register", async (req, res) => {
     try{
@@ -62,7 +59,7 @@ app.post("/register", async (req, res) => {
 
 // login check
 
-app.post("/login", async(req, res) => {
+app.post("/register", async(req, res) => {
     try{
         const email = req.body.email;
         const password = req.body.password;
